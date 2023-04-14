@@ -69,11 +69,13 @@ Für die initiale Installation von ASV-SAM unter verwendung des ASV-SAM-Installe
 
 Installation mit curl (Empfohlen):
 ```shell
-curl -fsSL https://raw.githubusercontent.com/asvsam/asvsam-installer/master/installer.sh | sh --skip-signature-validation
+curl -fsSL https://raw.githubusercontent.com/asvsam/asvsam-installer/master/installer.sh \
+    | sh --skip-signature-validation
 ```
 Installation mit wget:
 ```shell
-wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/installer.sh | sh --skip-signature-validation
+wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/installer.sh \
+    | sh --skip-signature-validation
 ```
 
 ## Changelog & Releases
