@@ -47,7 +47,7 @@ set -o nounset
 
 # Project name. Used for instance: /etc/<project_name>, /tmp/<project_name>-installer.XXX...
 __INSTALLER_PROJECT_NAME=asvsam
-__INSTALLER_GITHUB_ORG_REPO_NAME=asvsam/asvsam
+__INSTALLER_GITHUB_ORG_REPO_NAME=asvsam/asvsam-installer
 __INSTALLER_INSTALLER_FILENAME=Install.run
 __INSTALLER_APP_PUBLIC_TRUSTED_KEYRING_FILENAME=trusted.gpg
 
