@@ -81,30 +81,25 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 
 Für die initiale Installation von ASV-SAM unter Verwendung des ASV-SAM-Installer führen sie einen der folgenden Befehle auf der Konsole aus:
 
-| :exclamation: Wichtiger Hinweis                                                                                                                                                                                                |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dieses Vorgehen ist _ausschließlich_ für die Erst-Installation (initiale) auf einem System vorgesehen. Andernfalls siehe [Verwendung im Betrieb oder nach Erstinstallation](#Verwendung-im-Betrieb-oder-nach-Erstinstallation) |
+| :exclamation: Wichtiger Hinweis                                                                                                                                                                                                    |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Dieses Vorgehen ist **_ausschließlich_** für die Erst-Installation (initiale) auf einem System vorgesehen. Andernfalls siehe [Verwendung im Betrieb oder nach Erstinstallation](#Verwendung-im-Betrieb-oder-nach-Erstinstallation) |
 
 
 Installation mit curl (Empfohlen):
 ```shell
 curl -fsSL https://raw.githubusercontent.com/asvsam/asvsam-installer/master/installer.sh \
-    | sh --skip-signature-validation
+    | sh -s -- --skip-signature-validation
 ```
 Installation mit wget:
 ```shell
 wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/installer.sh \
-    | sh --skip-signature-validation
+    | sh -s -- --skip-signature-validation
 ```
 
 ### Verwendung im Betrieb oder nach Erstinstallation
 
-Für die Verwendung des Installers im Betreieb oder nach der Erstinstallation führen sie einen der folgenden Befehle auf der Konsole aus:
-
-Installer (Überprüfung, bzw. Aktualisierung des Installation):
-```shell
-/opt/asvsam/installer.sh
-```
+Für die Verwendung des Installers im Betrieb oder nach der Erstinstallation führen sie den folgenden Befehl auf der Konsole aus:
 
 Setup-Tool (Aufruf des Setup-Tools. Eine Überprüfung, bzw. Aktualisierung der Installation kann über die GUI erfolgen):
 ```shell

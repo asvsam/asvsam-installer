@@ -163,9 +163,9 @@ check_installation_status() {
 
     IS_GPG_INSTALLED=$(which gpg > /dev/null)
     if ${IS_GPG_INSTALLED}; then
-        ${__INSTALLER_SKIP_SIGNATURE_VALIDATION} || echo "OK - gpg found"
+        echo "OK - gpg found"
      else
-        ${__INSTALLER_SKIP_SIGNATURE_VALIDATION} || echo "gpg not found. GPG is required to verify the signature of the installer. Please install gpg."
+        stop_it "gpg not found. GPG is required to verify the signature of the installer. Please install gpg (sudo apt-get install gpg)."
     fi
 
 
@@ -197,13 +197,13 @@ umask 0022
 # MAIN LOGIC
 ####################
 
-# Check Installation status ()
-check_installation_status
-
 # Create temp dir and set trap to cleanup
 trap cleanup EXIT INT QUIT TERM
 tmpDir="$(mktemp -d -t ${__INSTALLER_PROJECT_NAME}-installer.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
     || stop_it "Can't create temporary directory for downloading ASV-SAM-Installer")"
+
+# Check Installation status ()
+check_installation_status
 
 # Git latest release of installer file
 INSTALLER_URL=$(curl -fsSL ${__INSTALLER_GITHUB_RELEASE_URI} \
