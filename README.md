@@ -81,7 +81,7 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 
 Für die initiale Installation von ASV-SAM unter Verwendung des ASV-SAM-Installer führen sie einen der folgenden Befehle auf der Konsole aus:
 
-| :exclamation: :exclamation: :exclamation:  **_Wichtiger Hinweis_**                                                                                                                                                                 |
+| :exclamation::exclamation::exclamation:  **_Wichtiger Hinweis_**                                                                                                                                                                   |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dieses Vorgehen ist **_ausschließlich_** für die Erst-Installation (initiale) auf einem System vorgesehen. Andernfalls siehe [Verwendung im Betrieb oder nach Erstinstallation](#Verwendung-im-Betrieb-oder-nach-Erstinstallation) |
 
