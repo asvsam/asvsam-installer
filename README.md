@@ -1,5 +1,4 @@
-# ASV Schul-Account-Manager Installer (asvsam/asvsam-installer)
-***
+# ASV-BW Schul-Account-Manager Installer (asvsam/asvsam-installer)
 ```
           d8888  .d8888b.  888     888  .d8888b.        d8888 888b     d888
          d88888 d88P  Y88b 888     888 d88P  Y88b      d88888 8888b   d8888
@@ -42,11 +41,10 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 [//]: # (5. [FAQs]&#40;#faqs&#41;)
 
 ## Voraussetzungen / System Anforderungen
-***
 
 ### Unterstützte Betriebsysteme (Linux):
-- Debian 11 (bullseye)
-- Ubuntu Server 22.04 LTS (Jammy Jellyfish)
+- [Debian 11 (bullseye)][debian_bullseye]
+- [Ubuntu Server 22.04 LTS (Jammy Jellyfish)][ubuntu_jammy]
 
 ### Systemanforderungen:
 - Linux-System basierend auf der 64-bit PC (amd64) Systemarchitektur
@@ -56,10 +54,16 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 - Internetverbindung (GitHub und DockerHub, sowie System-Repositories für Debian oder Ubuntu)
 
 ### Sonstige Anforderungen:
-- Normaler Benutzer mit Sudo-Rechten (Kein root Benutzer)
+- Normaler Benutzer mit Sudo-Rechten (Kein root Benutzer) und Zugriff auf das System
+
+### Optionale Anforderungen:
+- SMTP-Mail-Server für den Versand von E-Mails aus dem System heraus.
+- ASV-BW DB-Zugriff zur automatisierten Datenübernahme
+- WebUntis-API-Zugriff für den automatisieren Datenexport nach WebUntis
+- PaedMl-Zugriff für den automatisieren Datenexport nach PaedMl
+
 
 ## Verwendung des ASV-SAM-Installers
-***
 
 Für die initiale Installation von ASV-SAM unter verwendung des ASV-SAM-Installer führen sie einen der folgenden Befehle auf der Konsole aus:
 
@@ -77,15 +81,14 @@ wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/installe
 Dieses Repository trackt Änderungen unter Verwendung der [GitHub's releases][gh_asvsam_asvsaminstaller_releases] Funktionalität.
 
 Releases basieren auf einer Versionierung im [Semantic Versioning][semver] Format, ala `MAJOR.MINOR.PATCH`.
-Version werden unter Verwendung folgender Regeln fortgeschrieben:
 
+Version werden unter Verwendung folgender Regeln fortgeschrieben:
 * `MAJOR`: Inkompatibel oder große Änderungen
 * `MINOR`: Abwärtskompatibilität gegeben und neue Funktionen und Verbesserungen
 * `PATCH`: Abwärtskompatibilität gegeben und Fehlerbehebung, sowie kleinere Verbesserungen und neue Funktonen
 
 
 ## FAQs
-***
 
 1. **Ist es möglich die installation mit einem root-Benutzer durchzuführen:**
 
@@ -98,7 +101,7 @@ Dieser Benutzer kann dann für die Installation verwendet werden.
 [//]: # (   ddd)
 
 ## Links
-***
+
 - [ASV-SAM-Installer GitHub-Seite][gh_asvsam_asvsaminstaller]
 - [ASV-SAM-Installer Bug-Tracker][gh_asvsam_asvsaminstaller_issues]
 - [ASV-SAM-Installer Wiki][gh_asvsam_asvsaminstaller_wiki]
@@ -131,5 +134,8 @@ Dieser Benutzer kann dann für die Installation verwendet werden.
 [dh_asvsam_asvsam]: https://hub.docker.com/r/asvsam/asvsam
 
 [//]: # ([opensource_license]: https://opensource.org/licenses/Apache-2.0)
+
+[debian_bullseye]: https://www.debian.org/releases/bullseye/
+[ubuntu_jammy]: https://releases.ubuntu.com/jammy
 
 [semver]: https://semver.org/
