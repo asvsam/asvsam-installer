@@ -77,7 +77,14 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 
 ## Verwendung des ASV-SAM-Installers
 
-Für die initiale Installation von ASV-SAM unter verwendung des ASV-SAM-Installer führen sie einen der folgenden Befehle auf der Konsole aus:
+### Initiale Ausführung
+
+Für die initiale Installation von ASV-SAM unter Verwendung des ASV-SAM-Installer führen sie einen der folgenden Befehle auf der Konsole aus:
+
+| :exclamation: Wichtiger Hinweis                                                                                                                                                                                                |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Dieses Vorgehen ist _ausschließlich_ für die Erst-Installation (initiale) auf einem System vorgesehen. Andernfalls siehe [Verwendung im Betrieb oder nach Erstinstallation](#Verwendung-im-Betrieb-oder-nach-Erstinstallation) |
+
 
 Installation mit curl (Empfohlen):
 ```shell
@@ -88,6 +95,20 @@ Installation mit wget:
 ```shell
 wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/installer.sh \
     | sh --skip-signature-validation
+```
+
+### Verwendung im Betrieb oder nach Erstinstallation
+
+Für die Verwendung des Installers im Betreieb oder nach der Erstinstallation führen sie einen der folgenden Befehle auf der Konsole aus:
+
+Installer (Überprüfung, bzw. Aktualisierung des Installation):
+```shell
+/opt/asvsam/installer.sh
+```
+
+Setup-Tool (Aufruf des Setup-Tools. Eine Überprüfung, bzw. Aktualisierung der Installation kann über die GUI erfolgen):
+```shell
+/opt/asvsam/setup.sh
 ```
 
 ## Changelog & Releases
@@ -116,9 +137,13 @@ Dieser Benutzer kann dann für die Installation verwendet werden.
 
 ## Links
 
+### ASV-SAM-Installer
 - [ASV-SAM-Installer GitHub-Seite][gh_asvsam_asvsaminstaller]
 - [ASV-SAM-Installer Bug-Tracker][gh_asvsam_asvsaminstaller_issues]
 - [ASV-SAM-Installer Wiki][gh_asvsam_asvsaminstaller_wiki]
+- [ASV-SAM-Installer Releases][gh_asvsam_asvsaminstaller_releases]
+
+### ASV-SAM
 - [ASV-SAM GitHub][gh_asvsam_asvsam]
 - [ASV-SAM Docker-Hub][dh_asvsam_asvsam]
 
