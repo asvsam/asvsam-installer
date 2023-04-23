@@ -1,0 +1,7 @@
+ASV-BW Schul-Account-Manager Installer (asvsam/asvsam-installer)
+================================================================
+
+Version 1.0.70 (2023-04-16T13:18:12Z)
+
+- Fixed issue ...
+
