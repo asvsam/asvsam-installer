@@ -54,7 +54,7 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 
 ## Voraussetzungen / System Anforderungen
 
-### Unterstützte Betriebsysteme (Linux):
+### Unterstützte Betriebssysteme (Linux):
 - [Debian 11 (bullseye)][debian_bullseye]
 - [Ubuntu Server 22.04 LTS (Jammy Jellyfish)][ubuntu_jammy]
 
@@ -88,12 +88,12 @@ Für die initiale Installation von ASV-SAM unter Verwendung des ASV-SAM-Installe
 
 Installation mit curl (Empfohlen):
 ```shell
-curl -fsSL https://raw.githubusercontent.com/asvsam/asvsam-installer/master/installer.sh \
+curl -fsSL https://raw.githubusercontent.com/asvsam/asvsam-installer/main/installer.sh \
     | sh -s -- --skip-signature-validation
 ```
 Installation mit wget:
 ```shell
-wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/installer.sh \
+wget -nv -O - https://raw.githubusercontent.com/asvsam/asvsam-installer/main/installer.sh \
     | sh -s -- --skip-signature-validation
 ```
 
@@ -112,10 +112,16 @@ Dieses Repository trackt Änderungen unter Verwendung der [GitHub's releases][gh
 
 Releases basieren auf einer Versionierung im [Semantic Versioning][semver] Format, ala `MAJOR.MINOR.PATCH`.
 
-Version werden unter Verwendung folgender Regeln fortgeschrieben:
+Versionen werden unter Verwendung folgender Regeln fortgeschrieben:
 * `MAJOR`: Inkompatibel oder große Änderungen
 * `MINOR`: Abwärtskompatibilität gegeben und neue Funktionen und Verbesserungen
 * `PATCH`: Abwärtskompatibilität gegeben und Fehlerbehebung, sowie kleinere Verbesserungen und neue Funktonen
+
+
+## Handbücher
+- [Handbuch ASV-SAM - Installer][asv_docu_installer]
+- [Handbuch ASV-SAM - Setup-Tool][asv_docu_setup]
+- [Entwicklerhandbuch ASV-SAM Installer und Setup-Tool][asv_docu_developer]
 
 
 ## FAQs
@@ -173,3 +179,7 @@ Dieser Benutzer kann dann für die Installation verwendet werden.
 [ubuntu_jammy]: https://releases.ubuntu.com/jammy
 
 [semver]: https://semver.org/
+
+[asv_docu_installer]: src/main/docu/install_tool.md
+[asv_docu_setup]: src/main/docu/setup_tool.md
+[asv_docu_developer]: src/main/docu/developer_manual.md
