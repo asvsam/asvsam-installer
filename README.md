@@ -55,6 +55,7 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 ## Voraussetzungen / System Anforderungen
 
 ### Unterstützte Betriebssysteme (Linux):
+- [Debian 12 (bookworm)][debian_bookworm]
 - [Debian 11 (bullseye)][debian_bullseye]
 - [Ubuntu Server 22.04 LTS (Jammy Jellyfish)][ubuntu_jammy]
 
@@ -62,7 +63,7 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 - Linux-System basierend auf der 64-bit PC (amd64) Systemarchitektur
 - moderne CPU mit min. 2 Cores
 - min. 4 GB RAM
-- ca. 1GB verfügbarer Speicher auf der Festplatte
+- ca. 1 GB verfügbarer Speicher auf der Festplatte
 - Internetverbindung (GitHub und DockerHub, sowie System-Repositories für Debian oder Ubuntu)
 
 ### Sonstige Anforderungen:
@@ -79,9 +80,9 @@ Kenntnisse (Z.B. von Docker) weitgehend verzichtet werden kann.
 
 ### Initiale Ausführung
 
-Für die initiale Installation von ASV-SAM unter Verwendung des ASV-SAM-Installer führen sie einen der folgenden Befehle auf der Konsole aus:
+Für die initiale Installation von ASV-SAM unter Verwendung des ASV-SAM-Installers führen sie einen der folgenden Befehle auf der Konsole aus:
 
-| :exclamation: **_Wichtiger Hinweis_**                                                                                                                                                                   |
+| :exclamation: **_Wichtiger Hinweis_**                                                                                                                                                                                              |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dieses Vorgehen ist **_ausschließlich_** für die Erst-Installation (initiale) auf einem System vorgesehen. Andernfalls siehe [Verwendung im Betrieb oder nach Erstinstallation](#Verwendung-im-Betrieb-oder-nach-Erstinstallation) |
 
@@ -175,6 +176,7 @@ Dieser Benutzer kann dann für die Installation verwendet werden.
 
 [//]: # ([opensource_license]: https://opensource.org/licenses/Apache-2.0)
 
+[debian_bookworm]: https://www.debian.org/releases/bookworm/
 [debian_bullseye]: https://www.debian.org/releases/bullseye/
 [ubuntu_jammy]: https://releases.ubuntu.com/jammy
 
